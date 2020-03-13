@@ -2466,7 +2466,7 @@
                         ge.id = Ce.id;
                         var Ue = b.cloneNode(!0);
                         Be.ov && Ue.setAttribute("transform", Be.ov.toString());
-                        //Ue.removeAttribute("data-ac-wrapper-id");
+                        Ue.removeAttribute("data-ac-wrapper-id");
                         var Vd = Ce.id;
                         $.n(Vd) ? ge.id = Vd : $.n(ge.id) && (Vd = ge.id);
                         f = {
@@ -2490,7 +2490,7 @@
                         id.id = dh.id;
                         var De = b.cloneNode(!0);
                         si.ov && De.setAttribute("transform", si.ov.toString());
-                        //De.removeAttribute("data-ac-wrapper-id");
+                        De.removeAttribute("data-ac-wrapper-id");
                         var xg = dh.id;
                         $.n(xg) ? id.id = xg : $.n(id.id) && (xg = id.id);
                         f = {

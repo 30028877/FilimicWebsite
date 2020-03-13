@@ -114,5 +114,15 @@ namespace filimic.Controllers
         {
             return View();
         }
+
+        public ActionResult TermAndCondition()
+        {
+            return View();
+        }
+        public ActionResult PaivacyPolicy()
+        {
+            return View();
+
+        }
     }
 }
