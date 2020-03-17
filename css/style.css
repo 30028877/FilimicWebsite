@@ -3726,9 +3726,10 @@ a {
   color: #666;
   border-bottom: 1px solid dotted;
 }
-a:hover {
-  color: #020d18;
-}
+    a:hover {
+        /*color: #020d18;*/
+        color: wheat;
+    }
 p {
   margin-bottom: 10px;
 }
@@ -3742,17 +3743,20 @@ em,
 i {
   font-style: italic;
 }
+.bPrivacy {
+    font-weight: 1000;
+}
 blockquote {
-  border-left: 4px solid #707070;
-  border-left: 4px solid rgba(51, 51, 51, 0.7);
-  color: #707070;
-  color: rgba(51, 51, 51, 0.7);
-  font-size: 18px;
-  font-size: 1.8rem;
-  font-style: italic;
-  line-height: 1.6667;
-  margin-bottom: 1.6667em;
-  padding-left: 0.7778em;
+    border-left: 4px solid #707070;
+    border-left: 4px solid rgba(51, 51, 51, 0.7);
+    color: #707070;
+    color: rgba(51, 51, 51, 0.7);
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 1.6667;
+    margin-bottom: 1.6667em;
+    padding-left: 0.7778em;
 }
 blockquote p {
   margin-bottom: 1.6667em;

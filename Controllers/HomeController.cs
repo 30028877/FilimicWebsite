@@ -97,7 +97,7 @@ namespace filimic.Controllers
         {
             return View();
         }
-        public ActionResult SeriesSingle()
+        public ActionResult TVShows()
         {
             return View();
         }
@@ -119,7 +119,18 @@ namespace filimic.Controllers
         {
             return View();
         }
-        public ActionResult PaivacyPolicy()
+        public ActionResult PrivacyPolicy()
+        {
+            return View();
+
+        }
+        public ActionResult SiteMap()
+        {
+            return View();
+
+        }
+
+        public ActionResult ShowTime()
         {
             return View();
 

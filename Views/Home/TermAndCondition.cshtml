@@ -29,7 +29,7 @@
 <body>
     <!--preloading-->
     <div id="preloader">
-        <img class="logo" src="~/images/logo1.png" alt="" width="119" height="58">
+        <img class="logo" src="~/images/newlogo1.png" alt="" width="119" height="58">
         <div id="status">
             <span></span>
             <span></span>
@@ -115,9 +115,92 @@
         </div>
     </div>
     <!--end of signup form popup-->
+    <!-- BEGIN | Header -->
+    <header class="ht-header">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-custom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo">
+                    @*<div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <div id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>*@
+                    <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt="" width="30" height="30"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav flex-child-menu menu-left">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/MovieGrid" class="btn btn-default dropdown-toggle lv1">
+                                movies
+                            </a>
+                        </li>
+
+                        <li class="dropdown first">
+                            <a href="~/Home/TVShows" class="btn btn-default dropdown-toggle lv1">
+                                tv shows
+                            </a>
+                        </li>
+
+                        <li class="dropdown first">
+                            <a href="~/Home/CelebrityGrid" class="btn btn-default dropdown-toggle lv1">
+                                celebrities
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/BlogList" class="btn btn-default dropdown-toggle lv1">
+                                news
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                Showtime
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                coming soon
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                awards
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                trailors
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav flex-child-menu menu-right">
+                        <li class="loginLink"><a href="#">LOG In</a></li>
+                        <li class="btn signupLink"><a href="#">sign up</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+
+            <!-- top search form -->
+            <div class="top-search">
+                <select>
+                    <option value="united">TV show</option>
+                    <option value="saab">Others</option>
+                </select>
+                <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+            </div>
+        </div>
+    </header>
 
     <div class="landing-hero">
-        <img src="~/images/newlogo1.png" alt="Logo">
+        @*<img src="~/images/newlogo1.png" alt="Logo">*@
         <div class="row landing-hero-text">
             <h2>Terms and Conditions</h2>
             <div>
@@ -166,15 +249,60 @@
                     We reserve all rights to terminate accounts, edit or remove content and cancel orders in their sole discretion.
                 </p>
             </div>
-            
+
             <h2>Thank You</h2>
         </div>
         @*<a href="#" class="redbtn" id="discover-now">DISCOVER NOW</a>*@
     </div>
 
-    <!-- footer v3 section-->
-
-    <!-- end of footer v3 section-->
+    <footer class="ht-footer">
+        <div class="container">
+            <div class="flex-parent-ft">
+                @*<div class="flex-child-ft item1">
+                    <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt=""></a>
+                    <p>
+                        5th Avenue<br>
+                        Tauranga
+                    </p>
+                    <p>Call us: <a href="#">(+64) 202 342 6789</a></p>
+                </div>*@
+                <table>
+                    <tr>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/TermAndCondition">Terms & Conditions</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="ft-copyright">
+            <div class="backtotop">
+                <p><a href="#" id="back-to-top">Back to top<i class="ion-ios-arrow-thin-up"></i></a></p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

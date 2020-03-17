@@ -32,12 +32,12 @@
     <link rel="stylesheet" href="~/css/plugins.css">
     <link rel="stylesheet" href="~/css/style.css">
 
-    
+
     <script src="~/js/jquery.js"></script>
     <script src="~/js/plugins.js"></script>
     <script src="~/js/plugins2.js"></script>
     <script src="~/js/custom.js"></script>
-    
+
 
 </head>
 <body>
@@ -137,13 +137,13 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header logo">
                     @*<div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <div id="nav-icon1">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>*@
+                            <span class="sr-only">Toggle navigation</span>
+                            <div id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>*@
                     <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt="" width="30" height="30"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -159,7 +159,7 @@
                         </li>
 
                         <li class="dropdown first">
-                            <a href="~/Home/SeriesSingle" class="btn btn-default dropdown-toggle lv1">
+                            <a href="~/Home/TVShows" class="btn btn-default dropdown-toggle lv1">
                                 tv shows
                             </a>
                         </li>
@@ -1410,28 +1410,48 @@
     <footer class="ht-footer">
         <div class="container">
             <div class="flex-parent-ft">
-                <div class="flex-child-ft item1">
+                @*<div class="flex-child-ft item1">
                     <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt=""></a>
                     <p>
                         5th Avenue<br>
                         Tauranga
                     </p>
                     <p>Call us: <a href="#">(+64) 202 342 6789</a></p>
-                </div>
-                <div class="flex-child-ft item3">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Terms & Conditions </a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Site map</a></li>
-                    </ul>
-                </div>
+                </div>*@
+                <table>
+                    <tr>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/PrivacyPolicy">Privacy Policy</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/TermAndCondition">Terms & Conditions</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/SiteMap">Site Map</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="ft-copyright">
             <div class="backtotop">
-                <p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
+                <p><a href="#" id="back-to-top">Back to top<i class="ion-ios-arrow-thin-up"></i></a></p>
             </div>
         </div>
     </footer>

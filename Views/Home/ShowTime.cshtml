@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "CelebrityList";
+    ViewBag.Title = "ShowTime";
     Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
@@ -14,7 +14,7 @@
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html lang="en" class="no-js">
 
-<!-- celebritylist11:56-->
+<!-- movielist07:38-->
 <head>
     <!-- Basic need -->
     <title>Filmic</title>
@@ -129,13 +129,13 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header logo">
                     @*<div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <div id="nav-icon1">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>*@
+                            <span class="sr-only">Toggle navigation</span>
+                            <div id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>*@
                     <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt="" width="30" height="30"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -212,173 +212,165 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="hero-ct">
-                        <h1>celebrity listing - list</h1>
+                        <h1> Show Time</h1>
                         <ul class="breadcumb">
                             <li class="active"><a href="#">Home</a></li>
-                            <li> <span class="ion-ios-arrow-right"></span> celebrity listing</li>
+                            <li> <span class="ion-ios-arrow-right"></span> show time</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- celebrity list section-->
-    <div class="page-single">
+    <div class="page-single movie_list">
         <div class="container">
             <div class="row ipad-width2">
-                <div class="col-md-9 col-sm-12 col-xs-12">
+                <div class="col-md-8 col-sm-12 col-xs-12">
                     <div class="topbar-filter">
-                        <p class="pad-change">Found <span>1,608 celebrities</span> in total</p>
-                        <label>Sort by:</label>
-                        <select>
+                        <h4 style=" color :white;">Theatres - Tauranga </h4>
+                        @*<label>Sort by:</label>*@
+                        @*<select>
                             <option value="popularity">Popularity Descending</option>
                             <option value="popularity">Popularity Ascending</option>
                             <option value="rating">Rating Descending</option>
                             <option value="rating">Rating Ascending</option>
                             <option value="date">Release date Descending</option>
                             <option value="date">Release date Ascending</option>
-                        </select>
-                        <a href="celebritylist.html" class="list"><i class="ion-ios-list-outline active"></i></a>
-                        <a href="celebritygrid01.html" class="grid"><i class="ion-grid "></i></a>
+                        </select>*@
+                        @*<a href="movielist.html" class="list"><i class="ion-ios-list-outline active"></i></a>*@
+                        @*<a href="moviegrid.html" class="grid"><i class="ion-grid"></i></a>*@
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="ceb-item-style-2">
-                                <img src="~/images/uploads/ceblist1.jpg" alt="">
-                                <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Dan Stevens</a></h2>
-                                    <span>actor, usa</span>
-                                    <p>Dan Stevens was born at Croydon in Surrey on 10th October 1982. His parents are teachers. He was educated at Tonbridge School and trained in acting at the National Youth Theatre of Great Britain... </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="ceb-item-style-2">
-                                <img src="~/images/uploads/ceblist2.jpg" alt="">
-                                <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Luke Evans</a></h2>
-                                    <span>actor, mexico</span>
-                                    <p>Luke George Evans was born in Pontypool, Wales, and grew up in Aberbargoed, in the south of Wales. He is the son of Yvonne (Lewis) and David Evans. He moved to Cardiff at the age 17...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="ceb-item-style-2">
-                                <img src="~/images/uploads/ceblist3.jpg" alt="">
-                                <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Scarlett Johansson</a></h2>
-                                    <span>actress, france</span>
-                                    <p>Scarlett Ingrid Johansson was born in New York City. Her mother, Melanie Sloan, is from a Jewish family from the Bronx, and her father, Karsten Johansson, is a Danish-born architect, from Copenhagen...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="ceb-item-style-2">
-                                <img src="~/images/uploads/ceblist4.jpg" alt="">
-                                <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Emma Watson</a></h2>
-                                    <span>actress, uk</span>
-                                    <p>Emma Charlotte Duerre Watson was born in Paris, France, to English parents, Jacqueline Luesby and Chris Watson, both lawyers. She moved to Oxfordshire when she was five...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="ceb-item-style-2">
-                                <img src="~/images/uploads/ceblist5.jpg" alt="">
-                                <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Tom Hardy</a></h2>
-                                    <span>actor, italy	</span>
-                                    <p>Joan Crawford was born Lucille Fay LeSueur on March 23, 1905, in San Antonio, Texas, to Anna Belle (Johnson) and Thomas E. LeSueur, a laundry laborer. By the time she was born her parents had separated....</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="ceb-item-style-2">
-                                <img src="~/images/uploads/ceblist6.jpg" alt="">
-                                <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Joan Crawford</a></h2>
-                                    <span>director, sweden</span>
-                                    <p>Joan Crawford was born Lucille Fay LeSueur on March 23, 1905, in San Antonio, Texas, to Anna Belle (Johnson) and Thomas E. LeSueur, a laundry laborer. By the time she was born her parents had separated....</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="ceb-item-style-2">
-                                <img src="~/images/uploads/ceblist7.jpg" alt="">
-                                <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Margot Robbie</a></h2>
-                                    <span>actress, chile</span>
-                                    <p>Margot Robbie is an Australian actress born in Dalby, Queensland, and raised on the Gold Coast, spending much of her time at the farm belonging to her grandparents. Her mother, Sarie Kessler, is a physiotherapist....</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="ceb-item-style-2">
-                                <img src="~/images/uploads/ceblist8.jpg" alt="">
-                                <div class="ceb-infor">
-                                    <h2><a href="celebritysingle.html">Jason Momoa</a></h2>
-                                    <span>actor, usa</span>
-                                    <p>Joseph Jason Namakaeha Momoa was born on August 1, 1979 in Honolulu, Hawaii. He is the son of Coni (Lemke), a photographer, and Joseph Momoa, a painter...</p>
-                                </div>
-                            </div>
+                    <div class="movie-item-style-2">
+                        <img src="~/images/uploads/mv1.jpg" alt="">
+                        <div class="mv-item-infor">
+                            <h6><a href="moviesingle.html">oblivion <span>(2012)</span></a></h6>
+                            <p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
+                            <p class="describe">Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...</p>
+                            <h5 style=" color :white;">Showtimes</h5>
+                            <p>7:00 PM   9.30 PM </p>
+                            <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                            <p>Director: <a href="#">Joss Whedon</a></p>
+                            <p>Stars: <a href="#">Robert Downey Jr.,</a> <a href="#">Chris Evans,</a> <a href="#">  Chris Hemsworth</a></p>
                         </div>
                     </div>
-                    <div class="topbar-filter">
-                        <label>Reviews per page:</label>
+                    <div class="movie-item-style-2">
+                        <img src="~/images/uploads/mv2.jpg" alt="">
+                        <div class="mv-item-infor">
+                            <h6><a href="moviesingle.html">into the wild <span>(2014)</span></a></h6>
+                            <p class="rate"><i class="ion-android-star"></i><span>7.8</span> /10</p>
+                            <p class="describe">As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat...</p>
+                            <h5 style=" color :white;">Showtimes</h5>
+                            <p>7:00 PM   9.30 PM </p>
+                            <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                            <p>Director: <a href="#">Anthony Russo,</a><a href="#">Joe Russo</a></p>
+                            <p>Stars: <a href="#">Chris Evans,</a> <a href="#">Samuel L. Jackson,</a> <a href="#">  Scarlett Johansson</a></p>
+                        </div>
+                    </div>
+                    <div class="movie-item-style-2">
+                        <img src="~/images/uploads/mv3.jpg" alt="">
+                        <div class="mv-item-infor">
+                            <h6><a href="moviesingle.html">blade runner  <span>(2015)</span></a></h6>
+                            <p class="rate"><i class="ion-android-star"></i><span>7.3</span> /10</p>
+                            <p class="describe">Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help...</p>
+                            <h5 style=" color :white;">Showtimes</h5>
+                            <p>7:00 PM   9.30 PM </p>
+                            <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                            <p>Director: <a href="#">Peyton Reed</a></p>
+                            <p>Stars: <a href="#">Paul Rudd,</a> <a href="#"> Michael Douglas</a></p>
+                        </div>
+                    </div>
+                    <div class="movie-item-style-2">
+                        <img src="~/images/uploads/mv4.jpg" alt="">
+                        <div class="mv-item-infor">
+                            <h6><a href="moviesingle.html">Mulholland pride<span> (2013)  </span></a></h6>
+                            <p class="rate"><i class="ion-android-star"></i><span>7.2</span> /10</p>
+                            <p class="describe">When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.</p>
+                            <h5 style=" color :white;">Showtimes</h5>
+                            <p>7:00 PM   9.30 PM </p>
+                            <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                            <p>Director: <a href="#">Shane Black</a></p>
+                            <p>Stars: <a href="#">Robert Downey Jr., </a> <a href="#">  Guy Pearce,</a><a href="#">Don Cheadle</a></p>
+                        </div>
+                    </div>
+                    <div class="movie-item-style-2">
+                        <img src="~/images/uploads/mv5.jpg" alt="">
+                        <div class="mv-item-infor">
+                            <h6><a href="moviesingle.html">skyfall: evil of boss<span> (2013)  </span></a></h6>
+                            <p class="rate"><i class="ion-android-star"></i><span>7.0</span> /10</p>
+                            <p class="describe">When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.</p>
+                            <h5 style=" color :white;">Showtimes</h5>
+                            <p>7:00 PM   9.30 PM </p>
+                            <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                            <p>Director: <a href="#">Alan Taylor</a></p>
+                            <p>Stars: <a href="#">Chris Hemsworth,  </a> <a href="#">  Natalie Portman,</a><a href="#">Tom Hiddleston</a></p>
+                        </div>
+                    </div>
+                    @*<div class="topbar-filter">
+                        <label>Movies per page:</label>
                         <select>
-                            <option value="range">36 Reviews</option>
-                            <option value="saab">18 Reviews</option>
+                            <option value="range">5 Movies</option>
+                            <option value="saab">10 Movies</option>
                         </select>
-
                         <div class="pagination2">
-                            <span>Page 1 of 6:</span>
+                            <span>Page 1 of 2:</span>
                             <a class="active" href="#">1</a>
                             <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">6</a>
                             <a href="#"><i class="ion-arrow-right-b"></i></a>
                         </div>
-                    </div>
+                    </div>*@
                 </div>
-                <div class="col-md-3 col-xs-12 col-sm-12">
+                <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="sidebar">
                         <div class="searh-form">
-                            <h4 class="sb-title">Search celebrity</h4>
-                            <form class="form-style-1 celebrity-form" action="#">
+                            <h4 class="sb-title">Search for movie</h4>
+                            <form class="form-style-1" action="#">
                                 <div class="row">
                                     <div class="col-md-12 form-it">
-                                        <label>Celebrity name</label>
+                                        <label>Movie name</label>
                                         <input type="text" placeholder="Enter keywords">
                                     </div>
                                     <div class="col-md-12 form-it">
-                                        <label>Celebrity Letter</label>
-                                        <select>
-                                            <option value="range">A</option>
-                                            <option value="saab">B</option>
-                                        </select>
+                                        <label>Genres & Subgenres</label>
+                                        <div class="group-ip">
+                                            <select name="skills" multiple="" class="ui fluid dropdown">
+                                                <option value="">Enter to filter genres</option>
+                                                <option value="Action1">Action 1</option>
+                                                <option value="Action2">Action 2</option>
+                                                <option value="Action3">Action 3</option>
+                                                <option value="Action4">Action 4</option>
+                                                <option value="Action5">Action 5</option>
+                                            </select>
+                                        </div>
+
                                     </div>
                                     <div class="col-md-12 form-it">
-                                        <label>Category</label>
+                                        <label>Rating Range</label>
+
                                         <select>
-                                            <option value="range">Actress</option>
-                                            <option value="saab">Others</option>
+                                            <option value="range">-- Select the rating range below --</option>
+                                            <option value="saab">-- Select the rating range below --</option>
+                                            <option value="saab">-- Select the rating range below --</option>
+                                            <option value="saab">-- Select the rating range below --</option>
                                         </select>
+
                                     </div>
                                     <div class="col-md-12 form-it">
-                                        <label>Year of birth</label>
+                                        <label>Release Year</label>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <select>
-                                                    <option value="range">1970</option>
-                                                    <option value="number">Other</option>
+                                                    <option value="range">From</option>
+                                                    <option value="number">10</option>
+                                                    <option value="number">20</option>
+                                                    <option value="number">30</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-6">
                                                 <select>
-                                                    <option value="range">1990</option>
-                                                    <option value="number">others</option>
+                                                    <option value="range">To</option>
+                                                    <option value="number">20</option>
+                                                    <option value="number">30</option>
+                                                    <option value="number">40</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -390,36 +382,20 @@
                             </form>
                         </div>
                         <div class="ads">
-                            <img src="images/uploads/ads1.png" alt="">
+                            <img src="~/images/uploads/ads1.png" alt="">
                         </div>
-                        <div class="celebrities">
-                            <h4 class="sb-title">featured celebrity</h4>
-                            <div class="celeb-item">
-                                <a href="#"><img src="~/images/uploads/ava1.jpg" alt=""></a>
-                                <div class="celeb-author">
-                                    <h6><a href="#">Samuel N. Jack</a></h6>
-                                    <span>Actor</span>
+                        <div class="sb-facebook sb-it">
+                            <h4 class="sb-title">Find us on Facebook</h4>
+                            <iframe src="#" data-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftemplatespoint.net%2F%3Ffref%3Dts&tabs=timeline&width=340&height=315px&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" height="315" style="width:100%;border:none;overflow:hidden"></iframe>
+                        </div>
+                        <div class="sb-twitter sb-it">
+                            <h4 class="sb-title">Tweet to us</h4>
+                            <div class="slick-tw">
+                                <div class="tweet item" id="">
+                                    <!-- Put your twiter id here -->
                                 </div>
-                            </div>
-                            <div class="celeb-item">
-                                <a href="#"><img src="~/images/uploads/ava2.jpg" alt=""></a>
-                                <div class="celeb-author">
-                                    <h6><a href="#">Benjamin Carroll</a></h6>
-                                    <span>Actor</span>
-                                </div>
-                            </div>
-                            <div class="celeb-item">
-                                <a href="#"><img src="~/images/uploads/ava3.jpg" alt=""></a>
-                                <div class="celeb-author">
-                                    <h6><a href="#">Beverly Griffin</a></h6>
-                                    <span>Actor</span>
-                                </div>
-                            </div>
-                            <div class="celeb-item">
-                                <a href="#"><img src="~/images/uploads/ava4.jpg" alt=""></a>
-                                <div class="celeb-author">
-                                    <h6><a href="#">Justin Weaver</a></h6>
-                                    <span>Actor</span>
+                                <div class="tweet item" id="">
+                                    <!-- Put your 2nd twiter account id here -->
                                 </div>
                             </div>
                         </div>
@@ -428,19 +404,18 @@
             </div>
         </div>
     </div>
-    <!-- end of celebrity list section-->
     <!-- footer section-->
     <footer class="ht-footer">
         <div class="container">
             <div class="flex-parent-ft">
                 @*<div class="flex-child-ft item1">
-                    <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt=""></a>
-                    <p>
-                        5th Avenue<br>
-                        Tauranga
-                    </p>
-                    <p>Call us: <a href="#">(+64) 202 342 6789</a></p>
-                </div>*@
+                        <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt=""></a>
+                        <p>
+                            5th Avenue<br>
+                            Tauranga
+                        </p>
+                        <p>Call us: <a href="#">(+64) 202 342 6789</a></p>
+                    </div>*@
                 <table>
                     <tr>
                         <td width="50px">
@@ -482,6 +457,5 @@
 
 </body>
 
-<!-- celebritylist12:04-->
+<!-- movielist07:38-->
 </html>
-

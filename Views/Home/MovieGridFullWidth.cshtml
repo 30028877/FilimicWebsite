@@ -127,14 +127,14 @@
             <nav class="navbar navbar-default navbar-custom">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header logo">
-                    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    @*<div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <div id="nav-icon1">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                    </div>
+                    </div>*@
                     <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt="" width="30" height="30"></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -144,56 +144,49 @@
                             <a href="#page-top"></a>
                         </li>
                         <li class="dropdown first">
-                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                movies<i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="~/Home/MovieGrid" class="btn btn-default dropdown-toggle lv1">
+                                movies
                             </a>
-                            <ul class="dropdown-menu level1">
-                                <li><a href="~/Home/MovieSingle">Movie Single</a></li>
-                                <li class="it-last"><a href="~/Home/SeriesSingle">Series single</a></li>
-                            </ul>
                         </li>
-                        <li class="dropdown first">
-                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                celebrities <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            </a>
-                            <ul class="dropdown-menu level1">
-                                <li><a href="~/Home/CelebrityGrid">Celebrity Grid</a></li>
 
-                            </ul>
+                        <li class="dropdown first">
+                            <a href="~/Home/TVShows" class="btn btn-default dropdown-toggle lv1">
+                                tv shows
+                            </a>
+                        </li>
+
+                        <li class="dropdown first">
+                            <a href="~/Home/CelebrityGrid" class="btn btn-default dropdown-toggle lv1">
+                                celebrities
+                            </a>
                         </li>
                         <li class="dropdown first">
-                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                news <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="~/Home/BlogList" class="btn btn-default dropdown-toggle lv1">
+                                news
                             </a>
-                            <ul class="dropdown-menu level1">
-                                <li><a href="~/Home/BlogList">blog List</a></li>
-                                <li><a href="~/Home/BlogGrid">blog Grid</a></li>
-                                <li class="it-last"><a href="~/Home/BlogDetail">blog Detail</a></li>
-                            </ul>
                         </li>
                         <li class="dropdown first">
-                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                community <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                Showtime
                             </a>
-                            <ul class="dropdown-menu level1">
-                                <li><a href="~/Home/UserfavoriteGrid">user favorite grid</a></li>
-                                <li><a href="~/Home/UserProfile">user profile</a></li>
-                                <li class="it-last"><a href="~/Home/UserRate">user rate</a></li>
-                            </ul>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                coming soon
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                awards
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                trailors
+                            </a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav flex-child-menu menu-right">
-                        <li class="dropdown first">
-                            <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                pages <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            </a>
-                            <ul class="dropdown-menu level1">
-                                <li><a href="~/Home/Landing">Landing</a></li>
-                                @*<li><a href="~/Home/PageNotFount">404 Page</a></li>*@
-                                <li class="it-last"><a href="~/Home/CommingSoon">Coming soon</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Help</a></li>
                         <li class="loginLink"><a href="#">LOG In</a></li>
                         <li class="btn signupLink"><a href="#">sign up</a></li>
                     </ul>
@@ -496,58 +489,48 @@
     <footer class="ht-footer">
         <div class="container">
             <div class="flex-parent-ft">
-                <div class="flex-child-ft item1">
+                @*<div class="flex-child-ft item1">
                     <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt=""></a>
                     <p>
                         5th Avenue<br>
                         Tauranga
                     </p>
                     <p>Call us: <a href="#">(+64) 202 342 6789</a></p>
-                </div>
-                <div class="flex-child-ft item2">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blockbuster</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Forums</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help Center</a></li>
-                    </ul>
-                </div>
-                <div class="flex-child-ft item3">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Security</a></li>
-                    </ul>
-                </div>
-                <div class="flex-child-ft item4">
-                    <h4>Account</h4>
-                    <ul>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Watchlist</a></li>
-                        <li><a href="#">Collections</a></li>
-                        <li><a href="#">User Guide</a></li>
-                    </ul>
-                </div>
-                <div class="flex-child-ft item5">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
-                    <form action="#">
-                        <input type="text" placeholder="Enter your email...">
-                    </form>
-                    <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
-                </div>
+                </div>*@
+                <table>
+                    <tr>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/TermAndCondition">Terms & Conditions</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="ft-copyright">
-            <div class="ft-left">
-                <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
-            </div>
             <div class="backtotop">
-                <p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
+                <p><a href="#" id="back-to-top">Back to top<i class="ion-ios-arrow-thin-up"></i></a></p>
             </div>
         </div>
     </footer>

@@ -1,100 +1,308 @@
 ﻿@{
     ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<p>Use this area to provide additional information.</p>
-<script src="~/js/jquery.js"></script>
-<script src="~/js/bootstrap.js"></script>
-<link href="~/Content/bootstrap.css" rel="stylesheet" />
-<script type="text/javascript">
-    //$(document).ready(function () {
-
-            $('body').on('click', '#btnPopUp', function () {
-             $('#container').modal({
-		           show: true
-		});
-    //});
-        
-        //$('#container').modal('toggle');
-
-    })
 
 
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7 no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en" class="no-js">
 
-        //$('#myModal').modal('show');
-</script>
-<!-- Button trigger modal -->
-<button type="button" id="btnPopUp" class="btn btn-primary" data-toggle="modal">
-    Launch demo modal
-</button>
+<!-- celebritylist11:56-->
+<head>
+    <!-- Basic need -->
+    <title>Filmic</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="profile" href="#">
 
-<!-- Modal -->
-<div class="modal fade in" id="container" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div id="container" class="modal-body">
-                ...hgfcgf  tdtrdtdtd
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+    <!--Google Font-->
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+    <!-- Mobile specific meta -->
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone-no">
+
+
+
+</head>
+<body>
+    <!--preloading-->
+    <div id="preloader">
+        <img class="logo" src="~/images/newlogo1.png" alt="" width="119" height="58">
+        <div id="status">
+            <span></span>
+            <span></span>
         </div>
     </div>
-</div>
+    <!--end of preloading-->
+    <!--login form popup-->
+    <div class="login-wrapper" id="login-content">
+        <div class="login-content">
+            <a href="#" class="close">x</a>
+            <h3>Login</h3>
+            <form method="post" action="#">
+                <div class="row">
+                    <label for="username">
+                        Username:
+                        <input type="text" name="username" id="username" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                    </label>
+                </div>
 
-
-@*<div id="container" style="display: none; margin-left:20px; width:90%;" class="modal fade in" role="dialog" aria-hidden="false" data-backdrop="static">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="rootwizard-2" class="form-wizard validate">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title"><b>Add Bounce Charge</b></h4>
+                <div class="row">
+                    <label for="password">
+                        Password:
+                        <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    </label>
+                </div>
+                <div class="row">
+                    <div class="remember">
+                        <div>
+                            <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
+                        </div>
+                        <a href="#">Forget password ?</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit">Login</button>
                 </div>
             </form>
-            <div class="modal-body">
-                <form class="form-wizard validate" id="BounceChargesForm">
-                    <div class="form-horizontal">
-                        <div class="form-horizontal">
-                            <div class="form-group">
-                                <div class="col-md-6">
-                                    <label>Bounce Date</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" id="bouncedate" class="form-control" placeholder="Payment Date">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Bounce Charge</label>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <input type="text" id="txtBounceAmount" class="form-control" placeholder="Amount" value="0">
-                                </div>
-                                <div class="col-md-6">
-                                    <label>Description</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <textarea id="txtBounceDescription" class="form-control" placeholder="Description" cols="4" rows="3"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
-                <div class="modal-footer">
-                    <input type="button" id="SaveBounceCharge" value="proceed" class="btn btn-default" data-toggle="modal">
+            <div class="row">
+                <p>Or via social</p>
+                <div class="social-btn-2">
+                    <a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
+                    <a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
                 </div>
-                <div id="ErrDv"></div>
             </div>
         </div>
     </div>
-</div>*@
+    <!--end of login form popup-->
+    <!--signup form popup-->
+    <div class="login-wrapper" id="signup-content">
+        <div class="login-content">
+            <a href="#" class="close">x</a>
+            <h3>sign up</h3>
+            <form method="post" action="#">
+                <div class="row">
+                    <label for="username-2">
+                        Username:
+                        <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                    </label>
+                </div>
+
+                <div class="row">
+                    <label for="email-2">
+                        your email:
+                        <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="password-2">
+                        Password:
+                        <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="repassword-2">
+                        re-type Password:
+                        <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    </label>
+                </div>
+                <div class="row">
+                    <button type="submit">sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--end of signup form popup-->
+    <!-- BEGIN | Header -->
+    <header class="ht-header">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-custom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo">
+                    @*<div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <div id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>*@
+                    <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt="" width="30" height="30"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav flex-child-menu menu-left">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/MovieGrid" class="btn btn-default dropdown-toggle lv1">
+                                movies
+                            </a>
+                        </li>
+
+                        <li class="dropdown first">
+                            <a href="~/Home/TVShows" class="btn btn-default dropdown-toggle lv1">
+                                tv shows
+                            </a>
+                        </li>
+
+                        <li class="dropdown first">
+                            <a href="~/Home/CelebrityGrid" class="btn btn-default dropdown-toggle lv1">
+                                celebrities
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/BlogList" class="btn btn-default dropdown-toggle lv1">
+                                news
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                Showtime
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                coming soon
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                awards
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                trailors
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav flex-child-menu menu-right">
+                        <li class="loginLink"><a href="#">LOG In</a></li>
+                        <li class="btn signupLink"><a href="#">sign up</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+
+            <!-- top search form -->
+            <div class="top-search">
+                <select>
+                    <option value="united">TV show</option>
+                    <option value="saab">Others</option>
+                </select>
+                <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+            </div>
+        </div>
+    </header>
+    <!-- END | Header -->
+    <!--preloading-->
+    @*<div id="preloader">
+            <img class="logo" src="~/images/logo1.png" alt="" width="119" height="58">
+            <div id="status">
+                <span></span>
+                <span></span>
+            </div>
+        </div>*@
+
+    <div class="landing-hero">
+        @*<img src="~/images/newlogo1.png" alt="Logo">*@
+        <div class="row landing-hero-text">
+            <h2>About</h2>
+            <div style="padding:100px;">
+
+                <p style="text-align:left">
+                    What is filmic?
+                    filmic is the world's most popular and authoritative source for movie, TV and celebrity content, designed to help fans explore the world of movies and shows and decide what to watch.
+
+                    Our searchable database includes millions of movies, TV and entertainment programs and cast and crew members. We help you jog your memory about a movie, show, or person on the tip of your tongue, find the best movie or show to watch next, and empower you to share your entertainment knowledge and opinions with the world’s largest community of fans.
+
+                    For fans deciding what to watch and where to watch it, we offer local movie showtimes, ticketing, trailers, critic and user reviews, personalized recommendations, photo galleries, entertainment news, quotes, trivia, box-office data, editorial feature sections and a universal Watchlist. To learn more about watching Trailers, Clips, Featurettes, and filmic Originals, please see the filmic Video FAQs.
+
+                    filmic creates new original video content each week including: The filmic Show, filmicrief, and Casting Calls amongst other interviews and daily topical videos. You can find new videos highlighted every day on the filmic homepage via your desktop computer or filmic app.
+
+                    Certain titles in our database may be available to stream for free with ads for US customers with an filmic account via filmic TV. Visit the filmic TV FAQ for more information.
+
+                    filmic launched online in 1990 and has been a subsidiary of Amazon.com since 1998.
+
+                    You can read more about filmic in our Press Room.
+
+                    To create your filmic account, please go to the Registration page.
+
+
+
+                    To learn more about our services for entertainment industry professionals, please visit What is filmicPro?
+
+                </p>
+            </div>
+
+            <h2>Thank You</h2>
+        </div>
+        @*<a href="#" class="redbtn" id="discover-now">DISCOVER NOW</a>*@
+    </div>
+
+    <footer class="ht-footer">
+        <div class="container">
+            <div class="flex-parent-ft">
+                @*<div class="flex-child-ft item1">
+                        <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt=""></a>
+                        <p>
+                            5th Avenue<br>
+                            Tauranga
+                        </p>
+                        <p>Call us: <a href="#">(+64) 202 342 6789</a></p>
+                    </div>*@
+                <table>
+                    <tr>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/TermAndCondition">Terms & Conditions</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="ft-copyright">
+            <div class="backtotop">
+                <p><a href="#" id="back-to-top">Back to top<i class="ion-ios-arrow-thin-up"></i></a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer section-->
+
+</body>
+
+<!-- celebritylist12:04-->
+</html>
+
