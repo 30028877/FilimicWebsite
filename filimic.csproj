@@ -149,8 +149,6 @@
     <Content Include="images\fancybox_overlay.png" />
     <Content Include="images\fancybox_sprite%402x.png" />
     <Content Include="images\fancybox_sprite.png" />
-    <Content Include="images\logo1.png" />
-    <Content Include="images\logo2.png" />
     <Content Include="images\newlogo1.png" />
     <Content Include="images\nivo\close%402x.png" />
     <Content Include="images\nivo\close.png" />
@@ -389,7 +387,7 @@
     <Content Include="Views\Home\CelebrityGrid2.cshtml" />
     <Content Include="Views\Home\CelebrityList.cshtml" />
     <Content Include="Views\Home\CelebritySingle.cshtml" />
-    <Content Include="Views\Home\CommingSoon.cshtml" />
+    <Content Include="Views\Home\ComingSoon.cshtml" />
     <Content Include="Views\Home\Landing.cshtml" />
     <Content Include="Views\Home\MovieGrid.cshtml" />
     <Content Include="Views\Home\MovieGridFullWidth.cshtml" />

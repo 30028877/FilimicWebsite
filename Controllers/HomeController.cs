@@ -70,7 +70,7 @@ namespace filimic.Controllers
         {
             return View();
         }
-        public ActionResult CommingSoon()
+        public ActionResult ComingSoon()
         {
             return View();
         }
