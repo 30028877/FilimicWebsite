@@ -122,18 +122,19 @@ namespace filimic.Controllers
         public ActionResult PrivacyPolicy()
         {
             return View();
-
         }
         public ActionResult SiteMap()
         {
             return View();
-
         }
 
         public ActionResult ShowTime()
         {
             return View();
-
+        }
+        public ActionResult Trailers()
+        {
+            return View();
         }
     }
 }
