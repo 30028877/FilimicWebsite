@@ -67,7 +67,7 @@
                         <div>
                             <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
                         </div>
-                        <a href="#">Forget password ?</a>
+                        <a href="~/Home/ForgotPassword">Forget password ?</a>
                     </div>
                 </div>
                 <div class="row">
@@ -176,11 +176,11 @@
                                 coming soon
                             </a>
                         </li>
-                        <li class="dropdown first">
+                        @*<li class="dropdown first">
                             <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
                                 awards
                             </a>
-                        </li>
+                        </li>*@
                         <li class="dropdown first">
                             <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
                                 trailors
@@ -188,6 +188,7 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav flex-child-menu menu-right">
+                        <li><a href="~/Home/Map">World Map</a></li>
                         <li class="loginLink"><a href="#">LOG In</a></li>
                         <li class="btn signupLink"><a href="#">sign up</a></li>
                     </ul>
@@ -328,6 +329,22 @@
                                     <div class="col-md-12 form-it">
                                         <label>Movie name</label>
                                         <input type="text" placeholder="Enter keywords">
+                                    </div>
+                                    <div class="col-md-12 form-it">
+                                        <label>Country List</label>
+
+                                        <select>
+                                            <option value="">-- Select --</option>
+                                            <option value="saab">-- INDIA --</option>
+                                            <option value="saab">-- USA --</option>
+                                            <option value="saab">-- RUSSIA --</option>
+                                            <option value="saab">-- KOREA --</option>
+                                            <option value="saab">-- CHINA --</option>
+                                            <option value="saab">-- PAKISTHAN --</option>
+                                            <option value="saab">-- UK --</option>
+                                            <option value="saab">-- NEW ZEALAND --</option>
+                                        </select>
+
                                     </div>
                                     <div class="col-md-12 form-it">
                                         <label>Genres & Subgenres</label>

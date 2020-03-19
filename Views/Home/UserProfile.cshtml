@@ -66,7 +66,7 @@
                         <div>
                             <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
                         </div>
-                        <a href="#">Forget password ?</a>
+                        <a href="~/Home/ForgotPassword">Forget password ?</a>
                     </div>
                 </div>
                 <div class="row">
@@ -175,11 +175,11 @@
                                 coming soon
                             </a>
                         </li>
-                        <li class="dropdown first">
+                        @*<li class="dropdown first">
                             <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
                                 awards
                             </a>
-                        </li>
+                        </li>*@
                         <li class="dropdown first">
                             <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
                                 trailors
@@ -187,6 +187,7 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav flex-child-menu menu-right">
+                        <li><a href="~/Home/Map">World Map</a></li>
                         <li class="loginLink"><a href="#">LOG In</a></li>
                         <li class="btn signupLink"><a href="#">sign up</a></li>
                     </ul>
@@ -241,7 +242,7 @@
                         <div class="user-fav">
                             <p>Others</p>
                             <ul>
-                                <li><a href="#">Change password</a></li>
+                                <li><a href="~/Home/ChangePassword">Change password</a></li>
                                 <li><a href="#">Log out</a></li>
                             </ul>
                         </div>
