@@ -94,7 +94,7 @@
                     map.padding(0);
 
                     map.listen("click", function () {
-                        alert(this.value);
+                        window.location.href = '@Url.Action("MovieGrid", "Home")';
                     });
 
                     var dataSet = anychart.data.set(data);

@@ -3723,7 +3723,7 @@ a {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  color: #666;
+  color: white;
   border-bottom: 1px solid dotted;
 }
     a:hover {
@@ -7850,7 +7850,7 @@ header .navbar-default .navbar-nav {
 }
 header .navbar-default .navbar-nav li a {
   font-family: 'Dosis', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   color: #abb7c4;
   font-weight: bold;
   text-transform: uppercase;
