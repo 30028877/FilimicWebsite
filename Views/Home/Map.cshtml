@@ -49,14 +49,11 @@
 </head>
 <body>
 
-
-    <!-- Button trigger modal -->
-    @*<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#container1">
-        Launch demo modal
-    </button>*@
-
     <!-- Modal -->
-    <div class="modal fade" id="container1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div>
+        <img src="~/images/uploads/error-bg.jpg" alt="">
+    </div>
+    <div class="modal fade" id="container1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-backdrop="static" >
         <div class="modal-dialog" role="document">
             <div id="container" class="modal-content">
 
@@ -78,11 +75,11 @@
                 anychart.data.loadJsonFile('https://cdn.anychart.com/samples/maps-general-features/world-choropleth-map/data.json', function (data) {
                     var map = anychart.map();
 
-                    map.credits()
-                        .enabled(true)
-                        .url('https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_population_density')
-                        .logoSrc('https://en.wikipedia.org/static/favicon/wikipedia.ico')
-                        .text('Data source: https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_population_density');
+                    Smap.credits()
+                    S    .enabled(true)
+                    S    .url('https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_population_density')
+                    S    .logoSrc('https://en.wikipedia.org/static/favicon/wikipedia.ico')
+                    S    .text('Data source: https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_population_density');
 
                     map.title()
                         .enabled(true)
