@@ -342,6 +342,13 @@
     <Content Include="images\uploads\trailer_4.jpg" />
     <Content Include="images\uploads\trailer_5.jpg" />
     <Content Include="images\uploads\trailer_6.jpg" />
+    <Content Include="images\uploads\tvshow1.jpg" />
+    <Content Include="images\uploads\tvshow3.jpg" />
+    <Content Include="images\uploads\tvshow44.jpg" />
+    <Content Include="images\uploads\tvshow5.jpg" />
+    <Content Include="images\uploads\tvshow6.jpg" />
+    <Content Include="images\uploads\tvshow7.jpg" />
+    <Content Include="images\uploads\tvshow8.jpg" />
     <Content Include="images\uploads\user-hero-bg.jpg" />
     <Content Include="images\uploads\user-img.png" />
     <Content Include="images\uploads\userava1.jpg" />
@@ -419,6 +426,7 @@
     <Content Include="Views\Home\Awards.cshtml" />
     <Content Include="Views\Home\ChangePassword.cshtml" />
     <Content Include="Views\Home\ForgotPassword.cshtml" />
+    <Content Include="Views\Home\TVShowsGrid.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

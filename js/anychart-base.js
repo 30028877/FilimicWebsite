@@ -24159,7 +24159,6 @@
                     var b = ""
                       , c = $.He("STYLE");
                     c.type = "text/css";
-                    b += '.anychart-credits{position:absolute;overflow:hidden;right:9px;bottom:6px;height:10px;}.anychart-credits a {text-decoration:none;}.anychart-credits-logo{border:none;margin-right:2px;height:10px;width:10px;display:inline-block;vertical-align:top;}.anychart-credits-text{font-size:10px;line-height:9px;display:inline-block;vertical-align:top;text-decoration:none;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#929292;height:10px;}';
                     c.styleSheet ? c.styleSheet.cssText = b : c.appendChild(window.document.createTextNode(String(b)));
                     $.Qe($.ue(window.document, "head", void 0, void 0)[0], c, 0);
                     ND = !0
@@ -24174,17 +24173,17 @@
                 this.J(Zk) && (b && b.appendChild(this.Gd),
                 this.I(Zk));
                 this.J($k) && (b = $.gc.apply(null, [", v%s.%s.%s.%s"].concat(["8", "7", "1", "1930"])),
-                c = a ? this.RI() : "AnyChart - JavaScript Charts designed to be embedded and integrated{{anychart-version}}",
+                c = a ? this.RI() : "",
                 $.we(this.g, {
                     href: a ? this.TI() : "https://www.anychart.com/?utm_source=trial",
                     title: c.replace("{{anychart-version}}", b),
                     target: "_blank"
                 }),
                 $.we(this.b, {
-                    alt: a ? this.SI() : "AnyChart - JavaScript Charts"
+                    alt: a ? this.SI() : ""
                 }),
                 this.I($k));
-                this.J(al) && (a = a ? this.text() : "AnyChart Trial Version",
+                this.J(al) && (a = a ? this.text() : "",
                 $.Ze(this.D, a),
                 this.I(al));
                 if (this.J(bl)) {
@@ -52594,7 +52593,7 @@
                 },
                 defaultBackground: {
                     enabled: !1,
-                    fill: "#ffffff",
+                    fill: "#020d18",
                     stroke: "none",
                     cornerType: "round",
                     corners: 0
@@ -53087,13 +53086,6 @@
                     anchor: "center",
                     zIndex: 999999,
                     text: "No data."
-                },
-                stageCredits: {
-                    text: "AnyChart",
-                    url: "https://www.anychart.com/?utm_source=registered",
-                    alt: "AnyChart - JavaScript Charts designed to be embedded and integrated{{anychart-version}}",
-                    imgAlt: "AnyChart - JavaScript Charts",
-                    logoSrc: "https://static.anychart.com/logo.png"
                 },
                 chart: {
                     zIndex: 0,

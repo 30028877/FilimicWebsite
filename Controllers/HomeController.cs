@@ -144,5 +144,9 @@ namespace filimic.Controllers
         {
             return View();
         }
+        public ActionResult TVShowsGrid()
+        {
+            return View();
+        }
     }
 }
