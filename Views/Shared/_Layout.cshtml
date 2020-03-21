@@ -3,221 +3,246 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="~/css/plugins.css">
+    <link rel="stylesheet" href="~/css/style.css">
+
+
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="~/js/plugins.js"></script>
+    <script src="~/js/plugins2.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-
-    @RenderSection("scripts", required: false)
-
-
-
-
-    <body>
-        <!--preloading-->
-        <div id="preloader">
-            <img class="logo" src="~/images/newlogo1.png" alt="" width="119" height="58">
-            <div id="status">
-                <span></span>
-                <span></span>
-            </div>
+    <!--preloading-->
+    <div id="preloader">
+        <img class="logo" src="~/images/newlogo1.png" alt="" width="119" height="58">
+        <div id="status">
+            <span></span>
+            <span></span>
         </div>
-        <!--end of preloading-->
-        <!--login form popup-->
-        <div class="login-wrapper" id="login-content">
-            <div class="login-content">
-                <a href="#" class="close">x</a>
-                <h3>Login</h3>
-                <form method="post" action="#">
-                    <div class="row">
-                        <label for="username">
-                            Username:
-                            <input type="text" name="username" id="username" placeholder="User Name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-                        </label>
-                    </div>
-
-                    <div class="row">
-                        <label for="password">
-                            Password:
-                            <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                        </label>
-                    </div>
-                    <div class="row">
-                        <div class="remember">
-                            <div>
-                                <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
-                            </div>
-                            <a href="~/Home/ForgotPassword">Forget password ?</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <button type="submit">Login</button>
-                    </div>
-                </form>
+    </div>
+    <!--end of preloading-->
+    <!--login form popup-->
+    <div class="login-wrapper" id="login-content">
+        <div class="login-content">
+            <a href="#" class="close">x</a>
+            <h3>Login</h3>
+            <form method="post" action="#">
                 <div class="row">
-                    <p>Or via social</p>
-                    <div class="social-btn-2">
-                        <a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
-                        <a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
+                    <label for="username">
+                        Username:
+                        <input type="text" name="username" id="username" placeholder="User Name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                    </label>
+                </div>
+
+                <div class="row">
+                    <label for="password">
+                        Password:
+                        <input type="password" name="password" id="password" placeholder="******" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    </label>
+                </div>
+                <div class="row">
+                    <div class="remember">
+                        <div>
+                            <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>
+                        </div>
+                        <a style="color:black;" href="~/Home/ForgotPassword">Forget password ?</a>
                     </div>
+                </div>
+                <div class="row">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <div class="row">
+                <p>Or via social</p>
+                <div class="social-btn-2">
+                    <a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
+                    <a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
                 </div>
             </div>
         </div>
-        <!--end of login form popup-->
-        <!--signup form popup-->
-        <div class="login-wrapper" id="signup-content">
-            <div class="login-content">
-                <a href="#" class="close">x</a>
-                <h3>sign up</h3>
-                <form method="post" action="#">
-                    <div class="row">
-                        <label for="username-2">
-                            Username:
-                            <input type="text" name="username" id="username-2" placeholder="User Name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-                        </label>
-                    </div>
+    </div>
+    <!--end of login form popup-->
+    <!--signup form popup-->
+    <div class="login-wrapper" id="signup-content">
+        <div class="login-content">
+            <a href="#" class="close">x</a>
+            <h3>sign up</h3>
+            <form method="post" action="#">
+                <div class="row">
+                    <label for="username-2">
+                        Username:
+                        <input type="text" name="username" id="username-2" placeholder="User Name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                    </label>
+                </div>
 
-                    <div class="row">
-                        <label for="email-2">
-                            your email:
-                            <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                        </label>
-                    </div>
-                    <div class="row">
-                        <label for="password-2">
-                            Password:
-                            <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                        </label>
-                    </div>
-                    <div class="row">
-                        <label for="repassword-2">
-                            re-type Password:
-                            <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-                        </label>
-                    </div>
-                    <div class="row">
-                        <button type="submit">sign up</button>
-                    </div>
-                </form>
-            </div>
+                <div class="row">
+                    <label for="email-2">
+                        your email:
+                        <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="password-2">
+                        Password:
+                        <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="repassword-2">
+                        re-type Password:
+                        <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                    </label>
+                </div>
+                <div class="row">
+                    <button type="submit">sign up</button>
+                </div>
+            </form>
         </div>
-        <!--end of signup form popup-->
-        <!-- BEGIN | Header -->
-        <header class="ht-header full-width-hd">
-            <div class="row">
-                <nav id="mainNav" class="navbar navbar-default navbar-custom">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header logo">
-                        <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    </div>
+    <!--end of signup form popup-->
+    <!-- BEGIN | Header -->
+    <header class="ht-header">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-custom">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header logo">
+                    @*<div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span>
                             <div id="nav-icon1">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </div>
-                        </div>
-                        <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt="" width="30" height="30"></a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav flex-child-menu menu-left">
-                            <li class="hidden">
-                                <a href="#page-top"></a>
-                            </li>
-                            <li class="dropdown first">
-                                <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                    movies<i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </a>
-                                <ul class="dropdown-menu level1">
-                                    <li><a href="~/Home/MovieSingle">Movie Single</a></li>
-                                    <li class="it-last"><a href="~/Home/TVShows">TV Shows</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown first">
-                                <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                    celebrities <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </a>
-                                <ul class="dropdown-menu level1">
-                                    <li><a href="~/Home/CelebrityGrid">Celebrity Grid</a></li>
+                        </div>*@
+                    <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt="" width="30" height="30"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav flex-child-menu menu-left">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/MovieGrid" class="btn btn-default dropdown-toggle lv1">
+                                movies
+                            </a>
+                        </li>
 
-                                </ul>
-                            </li>
-                            <li class="dropdown first">
-                                <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                    news <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <li class="dropdown first">
+                            <a href="~/Home/TVShows" class="btn btn-default dropdown-toggle lv1">
+                                tv shows
+                            </a>
+                        </li>
+
+                        <li class="dropdown first">
+                            <a href="~/Home/CelebrityGrid" class="btn btn-default dropdown-toggle lv1">
+                                celebrities
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/BlogList" class="btn btn-default dropdown-toggle lv1">
+                                news
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/ShowTime" class="btn btn-default dropdown-toggle lv1">
+                                Showtime
+                            </a>
+                        </li>
+                        <li class="dropdown first">
+                            <a href="~/Home/ComingSoon" class="btn btn-default dropdown-toggle lv1">
+                                coming soon
+                            </a>
+                        </li>
+                        @*<li class="dropdown first">
+                                <a href="~/Home/UserfavoriteGrid" class="btn btn-default dropdown-toggle lv1">
+                                    awards
                                 </a>
-                                <ul class="dropdown-menu level1">
-                                    <li><a href="~/Home/BlogList">blog List</a></li>
-                                    <li><a href="~/Home/BlogGrid">blog Grid</a></li>
-                                    <li class="it-last"><a href="~/Home/BlogDetail">blog Detail</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown first">
-                                <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                    community <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </a>
-                                <ul class="dropdown-menu level1">
-                                    <li><a href="~/Home/UserfavoriteGrid">user favorite grid</a></li>
-                                    <li><a href="~/Home/UserProfile">user profile</a></li>
-                                    <li class="it-last"><a href="~/Home/UserRate">user rate</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav flex-child-menu menu-right">
-                            <li class="dropdown first">
-                                <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                    pages <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </a>
-                                <ul class="dropdown-menu level1">
-                                    <li><a href="~/Home/Landing">Landing</a></li>
-                                    @*<li><a href="~/Home/PageNotFount">404 Page</a></li>*@
-                                    <li class="it-last"><a href="~/Home/ComingSoon">Coming soon</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="~/Home/Contact">Contact us</a></li>
-                            <li class="loginLink"><a href="#">LOG In</a></li>
-                            <li class="btn signupLink"><a href="#">sign up</a></li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </nav>
-                <!-- search form -->
+                            </li>*@
+                        <li class="dropdown first">
+                            <a href="~/Home/Trailers" class="btn btn-default dropdown-toggle lv1">
+                                Trailers
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav flex-child-menu menu-right">
+                        <li><a href="~/Home/Map">World Map</a></li>
+                        <li class="loginLink"><a href="#">LOG In</a></li>
+                        <li class="btn signupLink"><a href="#">sign up</a></li>
+                        <li><a href="~/Home/UserfavoriteGrid"><img src="~/images/uploads/author3.png" alt="" width="30" height="30"><br></a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+
+            <!-- top search form -->
+            @*<div class="top-search">
+                    <select>
+                        <option value="united">TV show</option>
+                        <option value="saab">Others</option>
+                    </select>
+                    <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+                </div>*@
+        </div>
+    </header>
+    <!-- END | Header -->
+    <!-- footer section-->
+    <footer class="ht-footer">
+        <div class="container">
+            <div class="flex-parent-ft">
+                @*<div class="flex-child-ft item1">
+                        <a href="~/Home/Index"><img class="logo" src="~/images/newlogo1.png" alt=""></a>
+                        <p>
+                            5th Avenue<br>
+                            Tauranga
+                        </p>
+                        <p>Call us: <a href="#">(+64) 202 342 6789</a></p>
+                    </div>*@
+                <table>
+                    <tr>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/About">About</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/PrivacyPolicy">Privacy Policy</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/Contact">Contact us</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/TermAndCondition">Terms & Conditions</a></li>
+                            </ul>
+                        </td>
+                        <td width="50px">
+                            <ul>
+                                <li><a href="~/Home/SiteMap">Site Map</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
-
-        </header>
-        <!-- END | Header -->
-    </body>
-
+        </div>
+        <div class="ft-copyright">
+            <div class="backtotop">
+                <p><a href="#" id="back-to-top">Back to top<i class="ion-ios-arrow-thin-up"></i></a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer section-->
 
 </body>
 </html>

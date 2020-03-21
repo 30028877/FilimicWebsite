@@ -148,5 +148,9 @@ namespace filimic.Controllers
         {
             return View();
         }
+         public ActionResult TestLayout()
+        {
+            return View();
+        }
     }
 }
