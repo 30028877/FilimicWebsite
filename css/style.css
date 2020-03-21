@@ -17,7 +17,7 @@
 	3. SKELETON
 	   3.1. PAGE
 	   3.2. HEADER
-	   3.3. FOOTER
+	   3.3. a
 
 
 	-----------------------------------------------------------
@@ -3723,7 +3723,7 @@ a {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  color: black;
+  color: white;
   border-bottom: 1px solid dotted;
 }
     a:hover {
