@@ -399,35 +399,24 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\homev2.cshtml" />
     <Content Include="Views\Shared\_Layout1.cshtml" />
-    <Content Include="Views\Home\PageNotFount.cshtml" />
-    <Content Include="Views\Home\BlogDetail.cshtml" />
     <Content Include="Views\Home\BlogGrid.cshtml" />
     <Content Include="Views\Home\BlogList.cshtml" />
     <Content Include="Views\Home\CelebrityGrid.cshtml" />
-    <Content Include="Views\Home\CelebrityGrid2.cshtml" />
-    <Content Include="Views\Home\CelebrityList.cshtml" />
     <Content Include="Views\Home\CelebritySingle.cshtml" />
     <Content Include="Views\Home\ComingSoon.cshtml" />
-    <Content Include="Views\Home\Landing.cshtml" />
     <Content Include="Views\Home\MovieGrid.cshtml" />
-    <Content Include="Views\Home\MovieGridFullWidth.cshtml" />
-    <Content Include="Views\Home\MovieList.cshtml" />
     <Content Include="Views\Home\MovieSingle.cshtml" />
     <Content Include="Views\Home\TVShows.cshtml" />
     <Content Include="Views\Home\UserfavoriteGrid.cshtml" />
-    <Content Include="Views\Home\UserProfile.cshtml" />
-    <Content Include="Views\Home\UserRate.cshtml" />
     <Content Include="Views\Home\Map.cshtml" />
     <Content Include="Views\Home\TermAndCondition.cshtml" />
     <Content Include="Views\Home\PrivacyPolicy.cshtml" />
     <Content Include="Views\Home\SiteMap.cshtml" />
     <Content Include="Views\Home\ShowTime.cshtml" />
     <Content Include="Views\Home\Trailers.cshtml" />
-    <Content Include="Views\Home\Awards.cshtml" />
     <Content Include="Views\Home\ChangePassword.cshtml" />
     <Content Include="Views\Home\ForgotPassword.cshtml" />
     <Content Include="Views\Home\TVShowsGrid.cshtml" />
-    <Content Include="Views\Home\TestLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

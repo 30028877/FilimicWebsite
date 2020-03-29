@@ -31,20 +31,11 @@ namespace filimic.Controllers
         {
             return View();
         }
-
         public ActionResult homev2()
         {
             return View();
         }
 
-        public ActionResult PageNotFount()
-        {
-            return View();
-        }
-        public ActionResult BlogDetail()
-        {
-            return View();
-        }
         public ActionResult BlogGrid()
         {
             return View();
@@ -57,15 +48,6 @@ namespace filimic.Controllers
         {
             return View();
         }
-
-        public ActionResult CelebrityGrid2()
-        {
-            return View();
-        }
-        public ActionResult CelebrityList()
-        {
-            return View();
-        }
         public ActionResult CelebritySingle()
         {
             return View();
@@ -74,22 +56,7 @@ namespace filimic.Controllers
         {
             return View();
         }
-        public ActionResult Landing()
-        {
-            return View();
-        }
-
         public ActionResult MovieGrid()
-        {
-            return View();
-        }
-
-        public ActionResult MovieGridFullWidth()
-        {
-            return View();
-        }
-
-        public ActionResult MovieList()
         {
             return View();
         }
@@ -101,20 +68,10 @@ namespace filimic.Controllers
         {
             return View();
         }
-
         public ActionResult UserfavoriteGrid()
         {
             return View();
         }
-        public ActionResult UserProfile()
-        {
-            return View();
-        }
-        public ActionResult UserRate()
-        {
-            return View();
-        }
-
         public ActionResult TermAndCondition()
         {
             return View();
@@ -127,7 +84,6 @@ namespace filimic.Controllers
         {
             return View();
         }
-
         public ActionResult ShowTime()
         {
             return View();
@@ -148,9 +104,6 @@ namespace filimic.Controllers
         {
             return View();
         }
-         public ActionResult TestLayout()
-        {
-            return View();
-        }
+
     }
 }
