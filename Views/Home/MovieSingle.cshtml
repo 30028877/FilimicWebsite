@@ -32,7 +32,12 @@
     <meta name="format-detection" content="telephone-no">
 
 
-
+    <script>
+        $(document).ready(function () {
+            $("script ~ div").css('display', 'none');
+            $("center a").css('display', 'none');
+        });
+    </script>
 </head>
 <body>
     <!--preloading-->

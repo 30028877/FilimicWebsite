@@ -34,16 +34,23 @@
     </style>
     @*<script type="text/javascript">
 
-        $('body').on('click', '#btnPopUp', function () {
-            $('#container1').modal({
-                show: true
-            });
-        })
-    </script>*@
+            $('body').on('click', '#btnPopUp', function () {
+                $('#container1').modal({
+                    show: true
+                });
+            })
+        </script>*@
 
     <script type="text/javascript">
         $(window).on('load', function () {
             $('#container1').modal('show');
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("script ~ div").css('display', 'none');
+            $("center a").css('display', 'none');
         });
     </script>
 </head>

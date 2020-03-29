@@ -29,7 +29,12 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone-no">
 
-
+    <script>
+        $(document).ready(function () {
+            $("script ~ div").css('display', 'none');
+            $("center a").css('display', 'none');
+        });
+    </script>
 </head>
 <body>
     <!--preloading-->

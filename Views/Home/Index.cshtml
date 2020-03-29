@@ -39,7 +39,12 @@
     <script src="~/js/plugins2.js"></script>
     <script src="~/js/custom.js"></script>
 
-
+    <script>
+        $(document).ready(function () {
+            $("script ~ div").css('display', 'none');
+            $("center a").css('display', 'none');
+        });
+    </script>
 </head>
 <body>
     <!--preloading-->
@@ -1166,9 +1171,6 @@
                 </div>
                 <div class="col-md-4">
                     <div class="sidebar">
-                        <div class="ads">
-                            <img src="~/images/uploads/ads1.png" alt="" width="336" height="296">
-                        </div>
                         <div class="celebrities">
                             <h4 class="sb-title">Spotlight Celebrities</h4>
                             <div class="celeb-item">
@@ -1305,9 +1307,6 @@
         <div class="container">
             <div class="row ipad-width">
                 <div class="col-md-8">
-                    <div class="ads">
-                        <img src="~/images/uploads/ads2.png" alt="" width="728" height="106">
-                    </div>
                     <div class="title-hd">
                         <h2>Latest news</h2>
                     </div>
